@@ -1,0 +1,164 @@
+<!-- Transfer Info Start -->
+<div id="transfer-info" class="grid" style="border-bottom:5px dashed #000000;">
+    <div class="row">
+        <!-- Transfer Info List Start -->
+        <div class="nav voucher-select" style="width:450px; min-height:300px; text-align:center; margin:0 auto">
+            <h2><i class="icon-warning"></i> Select Voucher ID</h2>
+            <ul class="menu" style="border:1px dashed #ededed; padding:10px">
+                <li id="link1">
+                    <a href="#" class="voucher-link">
+                        <span>Cihangir Hakan</span>
+                        <span>&nbsp</span>   
+                        <span>Sezer</span>
+                        <span>&nbsp</span>
+                        <span>VZ394C</span>
+                    </a>
+                </li>
+                <li id="link2">
+                    <a href="#" class="voucher-link">
+                        <span>Ahmet</span>
+                        <span>&nbsp</span>   
+                        <span>Sezer</span>
+                        <span>&nbsp</span>
+                        <span>VZ395C</span>
+                    </a>
+                </li>
+                <li id="link3">
+                    <a href="#" class="voucher-link">
+                        <span>Özgür</span>
+                        <span>&nbsp</span>   
+                        <span>Sezer</span>
+                        <span>&nbsp</span>
+                        <span>VZ396C</span>
+                    </a>
+                </li>               
+            </ul>
+        </div>
+        <!-- Transfer Info List Finish -->
+        <!-- Transfer Info Info Start -->
+        <div class="main" style="width:1550px">
+            
+            <div id="page1" class="content">
+                <h1><i class="icon-compass"></i> Transfer Info</h1>
+                <table class="table transfer-info">
+                        <thead>
+                            <tr>
+                                <th class="text-left"><i class="icon-user"></i> Full Name</th>
+                                <th class="text-left"><i class="icon-calendar"></i> Pickup Date</th>
+                                <th class="text-left"><i class="icon-clock"></i> Pickup Time</th>
+                                <th class="text-left"><i class="icon-tag"></i> Vehicle No</th>
+                                <th class="text-left"><i class="icon-accessibility"></i> Guide Name</th>
+                                <th class="text-left"><i class="icon-address-book"></i> Guide Contact Details</th>
+                                <th class="text-left"><i class="icon-warning"></i> Notes</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="user-name">Buğra</span> <span id="user-surname">Uluyurt</span>
+                                </td>
+                                <td class="right">
+                                    11 Aug 2014
+                                </td>
+                                <td class="right">
+                                    11:00
+                                </td>
+                                <td class="right">
+                                    06 KT 5168
+                                </td>
+                                <td class="right">
+                                    Hakan Varan
+                                </td>
+                                <td class="right">
+                                    <span id="guide-mail">hvaran@etstur.com.tr</span><br><span id="guide-mail">0532 354 68 79</span>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span id="user-name">Ali</span> <span id="user-surname">Uluyurt</span>
+                                </td>
+                                <td class="right">
+                                    11 Aug 2014
+                                </td>
+                                <td class="right">
+                                    11:00
+                                </td>
+                                <td class="right">
+                                    06 KT 5168
+                                </td>
+                                <td class="right">
+                                    Hakan Varan
+                                </td>
+                                <td class="right">
+                                    <span id="guide-mail">hvaran@etstur.com.tr</span><br><span id="guide-mail">0532 354 68 79</span>
+                                </td>
+                                <td>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                        </tfoot>
+                </table>
+                <div class="transfer-info-send">
+                    <div class="send-mail">
+                        <form>
+                            <input type="text" placeholder="Write your phone number" class="qwerty">
+                            <button class="button bg-black fg-white large" type="submit" onClick="this.form.reset()">Send SMS</button>
+                        </form>
+                        <form>
+                            <input type="text" placeholder="Write your e-mail address" class="qwerty">
+                            <button class="button bg-black fg-white large" type="submit" onClick="this.form.reset()">Send e-mail</button>
+                        </form>
+                    </div> 
+                </div>
+                
+            </div>
+            <div id="page2" class="content">
+                
+            </div>
+            <div id="page3" class="content">        
+                
+            </div>
+        </div>
+        <!-- Transfer Info Info Finish -->
+    </div>
+
+</div>
+<!-- Transfer Info Finish -->
+
+<script>
+    $('.menu a').click(function(e){
+        hideContentDivs();
+        var tmp_div = $(this).parent().index();
+        $('.main div.content').eq(tmp_div).show();
+    });
+
+    function hideContentDivs(){
+        $('.main div.content').each(function(){
+        $(this).hide();});
+    };
+    hideContentDivs();
+
+    $('.voucher-link').on('click', function(){
+        $('.voucher-select').addClass('voucher-menu-hidden');
+    });
+
+    var availableTags = []; 
+     
+    $('.qwerty').keyboard({ 
+        layout: 'turkish-q',
+        usePreview:false,
+        autoAccept:true,
+    }) 
+    .autocomplete({ 
+      source: "availableTags", 
+    }) 
+    .addAutocomplete() 
+    .addTyping();
+</script>

@@ -1,0 +1,117 @@
+<!-- Transfer Info Start -->
+<div id="transfer-info" class="grid" style="border-bottom:5px dashed #000000;">
+    <div class="row">
+        <!-- Transfer Info List Start -->
+        <div class="nav voucher-select" style="width:450px; min-height:300px; text-align:center; margin:0 auto">
+            <h2><i class="icon-warning"></i> Select Date</h2>
+            <ul class="menu" style="border:1px dashed #ededed; padding:10px">
+                <li id="link1">
+                    <a href="#" class="voucher-link">
+                        <span><i class="icon-calendar"></i> <span>03.December.2014</span></span>
+                    </a>
+                </li>
+                <li id="link2">
+                    <a href="#" class="voucher-link">
+                        <span><i class="icon-calendar"></i> <span>04.December.2014</span></span>
+                    </a>
+                </li>
+                <li id="link3">
+                    <a href="#" class="voucher-link">
+                        <span><i class="icon-calendar"></i> <span>05.December.2014</span></span>
+                    </a>
+                </li>               
+            </ul>
+        </div>
+        <!-- Transfer Info List Finish -->
+        <!-- Transfer Info Info Start -->
+        <div class="main" style="width:1550px">
+            
+            <div id="page1" class="content">
+                <h1><i class="fa fa-plane"></i> Daily Transfer List</h1>
+                <table class="table transfer-info">
+                    <thead>
+                        <tr>
+                            <th class="text-left"><i class="icon-bookmark"></i> Catalog</th>
+                            <th class="text-left"><i class="icon-calendar"></i> Date</th>
+                            <th class="text-left"><i class="icon-radio-checked"></i> Target</th>
+                            <th class="text-left"><i class="fa fa-plane"></i> Flight No</th>
+                            <th class="text-left"><i class="icon-location-2"></i> Terminal</th>
+                            <th class="text-left"><i class="icon-clock"></i> Departure Time</th>
+                            <th class="text-left"><i class="icon-clock"></i> Arrival Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="right">
+                                XOG
+                            </td>
+                            <td class="right">
+                                20.11.2014
+                            </td>
+                            <td class="right">
+                                DUS
+                            </td>
+                            <td class="right">
+                                XQ180
+                            </td>
+                            <td class="right">
+                                AYTI
+                            </td>
+                            <td class="right">
+                                10:40
+                            </td>
+                            <td class="right">
+                                06:45
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                    </tfoot>
+                </table>
+                
+            </div>
+            <div id="page2" class="content">
+                
+            </div>
+            <div id="page3" class="content">        
+                
+            </div>
+        </div>
+        <!-- Transfer Info Info Finish -->
+    </div>
+
+</div>
+<!-- Transfer Info Finish -->
+
+<script>
+    $('.menu a').click(function(e){
+        hideContentDivs();
+        var tmp_div = $(this).parent().index();
+        $('.main div.content').eq(tmp_div).show();
+    });
+
+    function hideContentDivs(){
+        $('.main div.content').each(function(){
+        $(this).hide();});
+    };
+    hideContentDivs();
+
+    $('.voucher-link').on('click', function(){
+        $('.voucher-select').addClass('voucher-menu-hidden');
+    });
+
+    var availableTags = []; 
+     
+    $('.qwerty').keyboard({ 
+        layout: 'turkish-q',
+        usePreview:false,
+        autoAccept:true,
+    }) 
+    .autocomplete({ 
+      source: "availableTags", 
+    }) 
+    .addAutocomplete() 
+    .addTyping();
+</script>

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'weather';
+    src: url('weatherfonts/artill_clean_icons-webfont.eot');
+    src: url('weatherfonts/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('weatherfonts/artill_clean_icons-webfont.woff') format('woff'),
+         url('weatherfonts/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('weatherfonts/artill_clean_icons-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-0:before { content: "\e10a"; }
+.icon-1:before { content: "\e10b"; }
+.icon-2:before { content: "\e10b"; }
+.icon-3:before { content: "\e10b"; }
+.icon-4:before { content: "\e10b"; }
+.icon-5:before { content: "\e10f"; }
+.icon-6:before { content: "\e10a"; }
+.icon-7:before { content: "\e110"; }
+.icon-8:before { content: "\e0ff"; }
+.icon-9:before { content: "\e10a"; }
+.icon-10:before { content: "\e10a"; }
+.icon-11:before { content: "\e10a"; }
+.icon-12:before { content: "\e10a"; }
+.icon-13:before { content: "\e10f"; }
+.icon-14:before { content: "\e10d"; }
+.icon-15:before { content: "\e10e"; }
+.icon-16:before { content: "\e10f"; }
+.icon-17:before { content: "\e10a"; }
+.icon-18:before { content: "\e110"; }
+.icon-19:before { content: "\e111"; }
+.icon-20:before { content: "\e0fd"; }
+.icon-21:before { content: "\e0fd"; }
+.icon-22:before { content: "\e0fd"; }
+.icon-23:before { content: "\e0fe"; }
+.icon-24:before { content: "\e0fe"; }
+.icon-25:before { content: "\e0ff"; }
+.icon-26:before { content: "\e111"; }
+.icon-27:before { content: "\e111"; }
+.icon-28:before { content: "\e111"; }
+.icon-29:before { content: "\e111"; }
+.icon-30:before { content: "\e111"; }
+.icon-31:before { content: "\e0fb"; }
+.icon-32:before { content: "\e0fa"; }
+.icon-33:before { content: "\e0fb"; }
+.icon-34:before { content: "\e102"; }
+.icon-35:before { content: "\e10a"; }
+.icon-36:before { content: "\e0fa"; }
+.icon-37:before { content: "\e113"; }
+.icon-38:before { content: "\e113"; }
+.icon-39:before { content: "\e113"; }
+.icon-40:before { content: "\e10a"; }
+.icon-41:before { content: "\e10f"; }
+.icon-42:before { content: "\e10a"; }
+.icon-43:before { content: "\e10f"; }
+.icon-44:before { content: "\e111"; }
+.icon-45:before { content: "\e113"; }
+.icon-46:before { content: "\e10e"; }
+.icon-47:before { content: "\e113"; }
+
+

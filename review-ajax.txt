@@ -1,0 +1,44 @@
+<div>
+	<h2>Your comments are important for us</h2>
+	<div class="review-pane">
+		<form class="guest-review-form">
+			<div class="input-control text" data-role="input-control">
+                <input type="text" class="qwerty4" placeholder="Guest Name (Optional)" hvkeyboarddefined="true">
+            </div>
+            <div class="input-control text" data-role="input-control">
+                <input type="text" class="qwerty7" placeholder="Contact Details (Optional)" hvkeyboarddefined="true">
+            </div>
+            <div class="input-control textarea" data-role="input-control">
+                <textarea hvkeyboarddefined="true" class="qwerty6" placeholder="Write your review in this section"></textarea>
+            </div>
+            <button class="button bg-steel fg-white large review-button" type="submit">Send</button>
+        </form>
+		<button class="button bg-darkRed fg-white large review-button" style="display:none" href="javascript:jQuery.fancybox.close();">Close</button>
+	</div>
+</div>
+<script type="text/javascript">
+    var availableTags = []; 
+     
+    $('.qwerty4:eq(0)') 
+     .keyboard({ layout: 'turkish-q', usePreview:false, autoAccept:true,}) 
+     .autocomplete({ 
+      source: "availableTags", 
+     })
+     $('.qwerty5:eq(0)') 
+     .keyboard({ layout: 'turkish-q', usePreview:false, autoAccept:true,}) 
+     .autocomplete({ 
+      source: "availableTags", 
+     })
+     $('.qwerty6:eq(0)') 
+     .keyboard({ layout: 'turkish-q', usePreview:false, autoAccept:true,}) 
+     .autocomplete({ 
+      source: "availableTags", 
+     })
+     $('.qwerty7:eq(0)') 
+     .keyboard({ layout: 'turkish-q', usePreview:false, autoAccept:true,}) 
+     .autocomplete({ 
+      source: "availableTags", 
+     })
+     .addAutocomplete() 
+     .addTyping();
+</script>
